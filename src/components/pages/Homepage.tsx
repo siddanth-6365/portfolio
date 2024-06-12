@@ -11,14 +11,13 @@ export default function HeroPage() {
                 <IconCloud />
                 <div className="flex flex-col items-center justify-center ">
                     <Hero />
-                    <ShinyButton text="Resume" />
+                    <ShinyButton text="Resume" link="https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true" />
                 </div>
             </HeroHighlight>
         </>
 
     );
 }
-
 
 const Hero = () => {
     return (

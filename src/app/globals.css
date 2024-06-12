@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(
     to bottom right,
@@ -23,7 +27,6 @@ body {
     rgb(var(--background-end-rgb))
   );
   color: rgb(var(--foreground-rgb));
-
 }
 
 @layer utilities {
