@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { TracingBeam } from "../ui/tracing-beam";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 import { WorkExpcontents } from "@/data";
 
 export default function WorkExp() {

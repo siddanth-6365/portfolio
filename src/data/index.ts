@@ -236,6 +236,33 @@ export const socials = [
   },
 ];
 
+export const people = [
+  {
+    id: 1,
+    name: "Twitter",
+    username: "Siddanth6365",
+    url: "https://x.com/Siddanth6365",
+    image:
+      "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: 2,
+    name: "Github",
+    username: "siddanth-6365",
+    url: "https://github.com/siddanth-6365",
+    image:
+      "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+  },
+  {
+    id: 3,
+    name: "LinkedIn",
+    username: "siddanth-reddy",
+    url: "https://www.linkedin.com/in/siddanth-reddy/",
+    image:
+      "https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png",
+  },
+];
+
 export const WorkExpcontents = [
   {
     title: "Teaching Assistant - 100xDevs (full Stack Bootcamp)",

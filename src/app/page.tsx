@@ -1,8 +1,10 @@
 "use client";
 import Navbar from "@/components/Navbar"
-import HomePage from "@/components/pages/Homepage"
-import WorkExperience from "@/components/pages/WorkExperience"
-import Projects from "@/components/pages/Projects"
+import HomePage from "./components/Homepage"
+import WorkExperience from "./components/WorkExperience"
+import Projects from "./components/Projects"
+import GeminiEffect from "./components/GeminiEffect"
+import ContactForm from "./components/ContactForm"
 
 export default function HeroHighlightDemo() {
   return (
@@ -15,6 +17,8 @@ export default function HeroHighlightDemo() {
       >
         <Projects />
       </div>
+      <GeminiEffect />
+      <ContactForm />
 
     </>
 
