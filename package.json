@@ -27,6 +27,7 @@
     "react-icon-cloud": "^4.1.4",
     "react-icons": "^5.2.1",
     "react-parallax-tilt": "^1.7.228",
+    "react-terminal": "^1.4.4",
     "react-tooltip": "^5.26.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
