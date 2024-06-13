@@ -1,0 +1,30 @@
+.strokedText {
+    color: white;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    /* font-style: italic; */
+    text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000; /* Outline color and size */
+  }
+  
+  .strokedTextDark {
+    color: black;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    /* font-style: italic; */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotateInfinite {
+    animation: rotate 8s infinite linear;
+  }

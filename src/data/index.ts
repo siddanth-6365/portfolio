@@ -160,65 +160,50 @@ export const skills = [
     name: "TypeScript",
   },
   {
+    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    name:"C++"
+  },
+  {
+    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+    name:"Svelte"
+  },
+  {
+    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    name:"postgresql"
+   },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    name: "MongoDB",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+    name:"GraphQL"
+  },
+  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     name: "Git",
   },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-    name: "Kubernetes",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-    name: "Linux",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
-    name: "Jenkins",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
-    name: "Terraform",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
-    name: "Ansible",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    name: "Python",
-  },
+  // {
+  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+  //   name: "Kubernetes",
+  // },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     name: "Docker",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-    name: "Java",
-  },
-  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     name: "AWS",
+  }, 
+  {
+    url:"https://pbs.twimg.com/profile_images/1584620135490338816/tCCcROZD_200x200.png",
+    name: "turborepo"
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
-    name: "Prometheus",
-  },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-  //   name: "Figma",
-  // },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
-  //   name: "GitLab",
-  // },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
-    name: "ArgoCD",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    name: "MongoDB",
-  },
+    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    name:"Redis"
+  }
+
 ];
 
 export const socials = [
