@@ -33,9 +33,10 @@ export default function App() {
     const command = terminalInput.trim() as keyof Command;
     const outputKey = terminalLineData.length + 1;
 
-    // @ts-ignore
+  
     setTerminalLineData(prevData => [
       ...prevData,
+        // @ts-ignore  
       <TerminalOutput key={outputKey}>$ {terminalInput}</TerminalOutput>,
       <TerminalOutput key={outputKey + 1}>
         {commands[command] || `Command not found: ${command}`}
