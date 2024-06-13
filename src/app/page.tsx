@@ -1,4 +1,3 @@
-"use client";
 import Navbar from "@/components/Navbar"
 import HomePage from "./components/Homepage"
 import WorkExperience from "./components/WorkExperience"
@@ -7,7 +6,6 @@ import GeminiEffect from "./components/GeminiEffect"
 import ContactForm from "./components/Contact"
 import Skills from "./components/SkillsPage"
 import {GithubCalender} from "./components/GithubCalender"
-import { TerminalContextProvider } from "react-terminal";
 
 export default function HeroHighlightDemo() {
   return (
@@ -32,9 +30,7 @@ export default function HeroHighlightDemo() {
       </div>
       <GeminiEffect />
 
-      <TerminalContextProvider>
       <ContactForm />      
-      </TerminalContextProvider>
       
     </>
 

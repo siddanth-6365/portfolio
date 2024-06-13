@@ -18,6 +18,9 @@ export default function App() {
       <h1 className="ml-4 text-2xl sm:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
         ~ terminal
       </h1>
+      <p className="text-lg mb-2 font-semibold">
+      For a list of available commands, type `help`
+      </p>
 
       <ReactTerminal
         commands={commands}
@@ -30,9 +33,6 @@ export default function App() {
           }
         }}
         theme="my-custom-theme"
-        welcomeMessage={"For a list, type `help`"}
-
-
       />
     </div>
   );
