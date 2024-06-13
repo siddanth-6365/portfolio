@@ -208,24 +208,6 @@ export const skills = [
 
 export const socials = [
   {
-    name: "Github",
-    url: "https://github.com/siddanth-6365",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/siddanth-reddy/",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg",
-  },
-  {
-    name: "Twitter",
-    url: "https://x.com/Siddanth6365",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
-  },
-];
-
-export const people = [
-  {
     id: 1,
     name: "Twitter",
     username: "Siddanth6365",

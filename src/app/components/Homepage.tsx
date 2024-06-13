@@ -4,7 +4,7 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { IconCloud } from "@/components/iconCloud"
 import ShinyButton from "@/components/ui/shiny-button"
 import { AnimatedTooltip } from "@/components/socialinks"
-import { people } from "@/data"
+import { socials } from "@/data"
 
 export default function HeroPage() {
     return (
@@ -15,7 +15,7 @@ export default function HeroPage() {
                     <Hero />
                     <ShinyButton text="Resume" link="https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true" />
                     <div className="flex flex-row items-center justify-center mt-4 md:mt-6 mr-8 w-full">
-                        <AnimatedTooltip items={people} />
+                        <AnimatedTooltip items={socials} />
                     </div>
                 </div>
             </HeroHighlight>
