@@ -21,7 +21,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg",
     ],
-    url: undefined,
+    url: "https://email-classifications-gpt-149g.vercel.app/",
     github: "https://github.com/ankitrajxd/myapp-config.git",
     features: [""],
     detailedDescription:
@@ -39,7 +39,9 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
+      
     ],
     url: undefined,
     github: "https://github.com/siddanth-6365/Flight-Booking-Backend",
@@ -66,10 +68,11 @@ export const projectList = [
     category: "frontend",
     image: portfolioImg,
     description:
-      "Sleek personal portfolio website made with NextJs, ShadcnUI and Framer Motion.",
+      "portfolio website, built with Next.js along with Aceternity UI and Tailwind CSS showcases my skills, work experience and projects. The site includes a contact form, powered by Nodemailer, allowing you to easily reach out to me.",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75"
     ],
     url: "siddanth.live",
     github: "https://github.com/siddanth-6365/portfolio",

@@ -51,12 +51,10 @@ const ProjectCard = ({
 
                 <Link href={url || `/`} className="border-b">
                     <Image
-                        className="object-cover "
+                        className=""
                         src={image}
                         alt={title}
-                        layout="responsive"
-                        width={100}
-                        height={100}
+                        style={{ height: '220px',width:"100%" }}
                     />
                 </Link>
 
@@ -69,7 +67,7 @@ const ProjectCard = ({
                         </Link>
                         {url && (
                             <a
-                                className="rounded bg-green-100  text-green-800 text-xs me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300"
+                                className="rounded bg-green-100  text-green-800 text-xs me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-gray-300"
                                 href={url}
                                 target="_blank"
                             >
@@ -78,7 +76,7 @@ const ProjectCard = ({
                         )}
                     </div>
 
-                    <p className="opacity-80 text-sm">{description}</p>
+                    <p className="line-clamp-6 opacity-80 text-gray-300  text-sm">{description}</p>
 
                     <div className="flex justify-between items-center mt-3 gap-1">
                         <div className="flex relative ">
