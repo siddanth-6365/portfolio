@@ -5,7 +5,7 @@ import nodejsImg from "../../public/nodejs.png";
 import cppImg from "../../public/c++.png";
 import ethereumImg from "../../public/ethereum.svg";
 import propxImg from "../../public/propx.png";
-import frescoGuardImg from "../../public/frescoGuard.png"
+import frescoGuardImg from "../../public/frescoGuard.png";
 
 export const projectList = [
   {
@@ -40,8 +40,7 @@ export const projectList = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png"
-      
+      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
     ],
     url: undefined,
     github: "https://github.com/siddanth-6365/Flight-Booking-Backend",
@@ -72,7 +71,7 @@ export const projectList = [
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75"
+      "https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75",
     ],
     url: "siddanth.live",
     github: "https://github.com/siddanth-6365/portfolio",
@@ -126,9 +125,8 @@ export const projectList = [
     description:
       "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
     tech: [
-      
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     ],
     url: undefined,
     github: "https://github.com/siddanth-6365/FrescoGuard",
@@ -160,24 +158,24 @@ export const skills = [
     name: "TypeScript",
   },
   {
-    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-    name:"C++"
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    name: "C++",
   },
   {
-    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
-    name:"Svelte"
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+    name: "Svelte",
   },
   {
-    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-    name:"postgresql"
-   },
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    name: "postgresql",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     name: "MongoDB",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
-    name:"GraphQL"
+    name: "GraphQL",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
@@ -194,16 +192,15 @@ export const skills = [
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
     name: "AWS",
-  }, 
-  {
-    url:"https://pbs.twimg.com/profile_images/1584620135490338816/tCCcROZD_200x200.png",
-    name: "turborepo"
   },
   {
-    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
-    name:"Redis"
-  }
-
+    url: "https://pbs.twimg.com/profile_images/1584620135490338816/tCCcROZD_200x200.png",
+    name: "turborepo",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    name: "Redis",
+  },
 ];
 
 export const socials = [
@@ -252,3 +249,14 @@ export const WorkExpcontents = [
     date: "Aug 2023 – Dec 2023",
   },
 ];
+
+export  const commandsAnswers = {
+  whoami: "Siddanth Reddy",
+  about: "Yet another developer from India with a passion for writing code and creating web applications that solve real-life challenges",
+  education: "(B.Tech.) - CSE at JIIT, Noida (2022-2026)",
+  email: "siddanth6365@gmail.com",
+  socials: "LinkedIn: linkedin.com/in/siddanth-reddy\nGitHub: github.com/siddanth-6365\nWebsite: siddanth.live",
+  skills: "Front-end: React.js, Next.js, SvelteKit, TailwindCSS\nBack-end: Node.js, Express.js, GraphQL, Microservices, Monorepos (Turborepo), Redis\nDatabases: MySQL, MongoDB, PostgreSQL\nDevOps & Deployments: Docker, Git/GitHub, Serverless Backends (Cloudflare Workers), AWS (EC2)",
+  experience: "Teaching Assistant at 100xDevs (Dec 2023 - May 2024) \n Web Developer Intern at ONBO (Aug 2023 - Dec 2023)",
+  help: "Available commands: whoami, about, education, email, socials, skills, experience"
+};

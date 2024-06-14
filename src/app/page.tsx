@@ -5,7 +5,7 @@ import Projects from "./components/Projects"
 import GeminiEffect from "./components/GeminiEffect"
 import ContactForm from "./components/Contact"
 import Skills from "./components/SkillsPage"
-import {GithubCalender} from "./components/GithubCalender"
+import { GithubCalender } from "./components/GithubCalender"
 
 export default function HeroHighlightDemo() {
   return (
@@ -20,7 +20,7 @@ export default function HeroHighlightDemo() {
       <div
         className="flex flex-col items-center justify-center p-4 md:p-0 my-[2rem]"
       >
-      <GithubCalender />
+        <GithubCalender />
       </div>
       <WorkExperience />
       <div data-aos="fade-right"
@@ -30,8 +30,8 @@ export default function HeroHighlightDemo() {
       </div>
       <GeminiEffect />
 
-      <ContactForm />      
-      
+      <ContactForm />
+
     </>
 
   );

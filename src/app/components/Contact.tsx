@@ -8,9 +8,9 @@ const ContactForm = () => {
     return (
         <div className='flex flex-col md:flex-row'>
             <div className='flex items-center justify-center w-full md:w-1/2'>
-               
-                    <Terminal />
-             
+
+                <Terminal />
+
             </div>
             <div className='flex items-center  w-screen md:w-1/2'>
                 <Form />
