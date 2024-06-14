@@ -22,37 +22,40 @@ export default function SignupFormDemo() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Formdata :", formData);
-        try {
-            const response = await fetch('/api/mail', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(formData),
-            });
-      
-            if (response.ok) {
-              alert("Email sent successfully");
-              setFormData({
-                name: "",
-                email: "",
-                subject: "",
-                body: ""
-            });
-            } else {
-              console.error("Error sending email");
-              alert("Error sending email, no problem mail me directly at siddanth6365@gmail.com")
+        if (!formData.name || !formData.email || !formData.subject || !formData.body) {
+            alert("Please fill all the fields");
+        } else {
+            try {
+                const response = await fetch('/api/mail', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    alert("Email sent successfully");
+                    setFormData({
+                        name: "",
+                        email: "",
+                        subject: "",
+                        body: ""
+                    });
+                } else {
+                    console.error("Error sending email");
+                    alert("Error sending email, no problem mail me directly at siddanth6365@gmail.com")
+                }
+            } catch (error) {
+                console.error("Error sending email:", error);
+                alert("Error sending email, no problem mail me directly at siddanth6365@gmail.com")
             }
-          } catch (error) {
-            console.error("Error sending email:", error);
-            alert("Error sending email, no problem mail me directly at siddanth6365@gmail.com")
-          }
+        }
     };
 
     return (
         <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-             <h1 className="text-center text-2xl sm:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
-       Send me an message!
-      </h1>
+            <h1 className="text-center text-2xl sm:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
+                Send me an message!
+            </h1>
             <p className="text-neutral-600 text-md md:text-lg max-w-sm mt-4 dark:text-neutral-300">
                 Got a question or proposal, or just want to say hello? Go ahead.
             </p>
@@ -68,12 +71,12 @@ export default function SignupFormDemo() {
                     <Label htmlFor="email">Email Address</Label>
                     <Input id="email" placeholder="siddanthe.edu@hotmail.com" type="email" value={formData.email} onChange={handleChange} />
                 </LabelInputContainer>
-                
+
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="subject">Subject</Label>
                     <Input id="subject" placeholder="let me know how can i help you opportunity" type="text" value={formData.subject} onChange={handleChange} />
                 </LabelInputContainer>
-                
+
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="body">Body</Label>
                     <Input id="body" placeholder="leave a comment ..." type="text" value={formData.body} onChange={handleChange} />
