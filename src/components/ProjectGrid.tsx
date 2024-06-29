@@ -25,12 +25,13 @@ export interface Project {
 
 const ProjectGrid = ({ projectList }: Props) => {
     const categories = Array.from(new Set(projectList.map((p) => p.category)));
+    const TopprojectList = projectList.filter((p) => p.tag === "top");
 
     return (
         <Tabs defaultValue="all" className="p-0">
             <TabsList className="flex flex-wrap bg-transparent  rounded-none">
                 <TabsTrigger className="rounded-none border" value="all">
-                    All
+                    Top
                 </TabsTrigger>
                 {categories.map((category, index) => (
                     <TabsTrigger
@@ -45,7 +46,7 @@ const ProjectGrid = ({ projectList }: Props) => {
 
             <TabsContent className="mt-16 md:mt-8" value="all">
                 <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-8 sm:gap-5">
-                    {projectList.map((p) => (
+                    {TopprojectList.map((p) => (
                         <ProjectCard
                             key={p.title}
                             {...p}

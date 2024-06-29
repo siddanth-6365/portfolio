@@ -12,6 +12,7 @@ export default function HeroHighlightDemo() {
     <>
       <Navbar />
       <HomePage />
+      
       <div
         className="px-[1.5rem] lg:px-[9rem] my-[2rem] mt-[2rem]"
       >

@@ -3,11 +3,8 @@ import IconCloud2 from "@/components/ui/icon-cloud";
 const slugs = [
   "typescript",
   "javascript",
-  "dart",
-  "java",
   "react",
-  "flutter",
-  "android",
+ "tailwindcss",
   "html5",
   "css3",
   "nodedotjs",
@@ -19,18 +16,20 @@ const slugs = [
   "firebase",
   "nginx",
   "vercel",
-  "testinglibrary",
-  "jest",
-  "cypress",
   "docker",
   "git",
-  "jira",
   "github",
-  "gitlab",
   "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
-  "figma",
+  "cloudflare",
+  "cplusplus",
+  "graphql",
+  "mongodb",
+  "svelte",
+  "turborepo",
+  "redis",
+  "php",
+  "mysql"
+
 ];
 
 export function IconCloud() {

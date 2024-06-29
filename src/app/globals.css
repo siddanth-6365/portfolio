@@ -25,8 +25,33 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+@keyframes scrolldown {
+  0% {
+    transform: translateY(20%) rotate(45deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(0%) rotate(45deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(20%) rotate(45deg);
+    opacity: 0.7;
+  }
+}
+
+.animate-scrolldown {
+  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+}
+
+.animation-delay {
+  animation-delay: 0s;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+

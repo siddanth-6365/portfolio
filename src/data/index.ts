@@ -9,25 +9,6 @@ import frescoGuardImg from "../../public/frescoGuard.png";
 
 export const projectList = [
   {
-    id: 4,
-    title: "Email Classifier-GPT",
-    category: "full Stack",
-    tag: "top",
-    image: emailClassifyImg,
-    description:
-      "This web application allows users to seamlessly manage their Gmail inbox by classifying emails into various categories using the power of OpenAI's GPT",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg",
-    ],
-    url: "https://email-classifications-gpt-149g.vercel.app/",
-    github: "https://github.com/ankitrajxd/myapp-config.git",
-    features: [""],
-    detailedDescription:
-      "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
-  },
-  {
     id: 1,
     tag: "top",
     title: "Flight-Booking-Backend",
@@ -103,6 +84,7 @@ export const projectList = [
   {
     id: 5,
     title: "Prop-X",
+    tag: "top",
     category: "blockchain",
     image: propxImg,
     description:
@@ -120,6 +102,7 @@ export const projectList = [
   {
     id: 5,
     title: "FrescoGuard",
+    tag: "top",
     category: "full Stack",
     image: frescoGuardImg,
     description:
@@ -133,6 +116,25 @@ export const projectList = [
     features: [],
     detailedDescription:
       "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
+  },
+  {
+    id: 4,
+    title: "Email Classifier-GPT",
+    category: "full Stack",
+    tag: "top",
+    image: emailClassifyImg,
+    description:
+      "This web application allows users to seamlessly manage their Gmail inbox by classifying emails into various categories using the power of OpenAI's GPT",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg",
+    ],
+    url: "https://email-classifications-gpt-149g.vercel.app/",
+    github: "https://github.com/ankitrajxd/myapp-config.git",
+    features: [""],
+    detailedDescription:
+      "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
   },
 ];
 
@@ -250,13 +252,17 @@ export const WorkExpcontents = [
   },
 ];
 
-export  const commandsAnswers = {
+export const commandsAnswers = {
   whoami: "Siddanth Reddy",
-  about: "Yet another developer from India with a passion for writing code and creating web applications that solve real-life challenges",
+  about:
+    "Yet another developer from India with a passion for writing code and creating web applications that solve real-life challenges",
   education: "(B.Tech.) - CSE at JIIT, Noida (2022-2026)",
   email: "siddanth6365@gmail.com",
-  socials: "LinkedIn: linkedin.com/in/siddanth-reddy\nGitHub: github.com/siddanth-6365\nWebsite: siddanth.live",
-  skills: "Front-end: React.js, Next.js, SvelteKit, TailwindCSS\nBack-end: Node.js, Express.js, GraphQL, Microservices, Monorepos (Turborepo), Redis\nDatabases: MySQL, MongoDB, PostgreSQL\nDevOps & Deployments: Docker, Git/GitHub, Serverless Backends (Cloudflare Workers), AWS (EC2)",
-  experience: "Teaching Assistant at 100xDevs (Dec 2023 - May 2024) \n Web Developer Intern at ONBO (Aug 2023 - Dec 2023)",
-  help: "Available commands: whoami, about, education, email, socials, skills, experience"
+  socials:
+    "LinkedIn: linkedin.com/in/siddanth-reddy\nGitHub: github.com/siddanth-6365\nWebsite: siddanth.live",
+  skills:
+    "Front-end: React.js, Next.js, SvelteKit, TailwindCSS\nBack-end: Node.js, Express.js, GraphQL, Microservices, Monorepos (Turborepo), Redis\nDatabases: MySQL, MongoDB, PostgreSQL\nDevOps & Deployments: Docker, Git/GitHub, Serverless Backends (Cloudflare Workers), AWS (EC2)",
+  experience:
+    "Teaching Assistant at 100xDevs (Dec 2023 - May 2024) \n Web Developer Intern at ONBO (Aug 2023 - Dec 2023)",
+  help: "Available commands: whoami, about, education, email, socials, skills, experience",
 };
