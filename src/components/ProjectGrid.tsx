@@ -57,8 +57,8 @@ const ProjectGrid = ({ projectList }: Props) => {
 
 
             {categories.map((category) => (
-                <TabsContent key={category} value={category}>
-                    <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
+                <TabsContent className="mt-16 md:mt-8" key={category} value={category}>
+                <AnimatedDiv ClassName="grid md:grid-cols-2 mt-3 lg:grid-cols-3 xl:grid-cols-4 md:p-0 gap-4 sm:gap-5">
                         {projectList
                             .filter((p) => p.category === category)
                             .map((p) => (
