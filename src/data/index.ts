@@ -136,6 +136,22 @@ export const projectList = [
     detailedDescription:
       "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
   },
+  {
+    id: 6,
+    tag: "top",
+    title: "gitLite",
+    category: "backend",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
+    description:
+      "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+ 
+    ],
+    url: "https://github.com/siddanth-6365/gitLite",
+    github: "https://github.com/siddanth-6365/gitLite",
+    features: [],
+  }
 ];
 
 export const skills = [
