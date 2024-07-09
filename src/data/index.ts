@@ -7,6 +7,7 @@ import ethereumImg from "../../public/ethereum.svg";
 import propxImg from "../../public/propx.png";
 import frescoGuardImg from "../../public/frescoGuard.png";
 import githubImg from "../../public/github.png"
+import gitImg from "../../public/git.png"
 
 export const projectList = [
   {
@@ -101,7 +102,7 @@ export const projectList = [
       "PropX is a cutting-edge platform dedicated to revolutionizing real estate transactions and property management using blockchain technology, specifically Ethereum. Our mission is to enhance transparency, security, and efficiency in property dealings, making it more accessible to a global audience.",
   },
   {
-    id: 5,
+    id: 6,
     title: "FrescoGuard",
     tag: "top",
     category: "full Stack",
@@ -119,7 +120,7 @@ export const projectList = [
       "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
   },
   {
-    id: 4,
+    id: 7,
     title: "Email Classifier-GPT",
     category: "full Stack",
     tag: "top",
@@ -138,15 +139,16 @@ export const projectList = [
       "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
   },
   {
-    id: 6,
+    id: 8,
     tag: "top",
     title: "gitLite",
     category: "backend",
-    image: githubImg,
+    image: gitImg,
     description:
       "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
 ],
     url: "https://github.com/siddanth-6365/gitLite",
     github: "https://github.com/siddanth-6365/gitLite",
