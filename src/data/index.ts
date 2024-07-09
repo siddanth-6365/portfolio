@@ -6,6 +6,7 @@ import cppImg from "../../public/c++.png";
 import ethereumImg from "../../public/ethereum.svg";
 import propxImg from "../../public/propx.png";
 import frescoGuardImg from "../../public/frescoGuard.png";
+import githubImg from "../../public/github.png"
 
 export const projectList = [
   {
@@ -141,13 +142,12 @@ export const projectList = [
     tag: "top",
     title: "gitLite",
     category: "backend",
-    image: nodejsImg,
+    image: githubImg,
     description:
       "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations",
     tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
- 
-    ],
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+],
     url: "https://github.com/siddanth-6365/gitLite",
     github: "https://github.com/siddanth-6365/gitLite",
     features: [],
