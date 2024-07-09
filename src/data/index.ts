@@ -141,7 +141,7 @@ export const projectList = [
     tag: "top",
     title: "gitLite",
     category: "backend",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
+    image: nodejsImg,
     description:
       "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations",
     tech: [
