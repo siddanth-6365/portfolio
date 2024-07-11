@@ -6,8 +6,8 @@ import cppImg from "../../public/c++.png";
 import ethereumImg from "../../public/ethereum.svg";
 import propxImg from "../../public/propx.png";
 import frescoGuardImg from "../../public/frescoGuard.png";
-import githubImg from "../../public/github.png"
-import gitImg from "../../public/git.png"
+import githubImg from "../../public/github.png";
+import gitImg from "../../public/git.png";
 
 export const projectList = [
   {
@@ -148,12 +148,12 @@ export const projectList = [
       "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-],
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    ],
     url: "https://github.com/siddanth-6365/gitLite",
     github: "https://github.com/siddanth-6365/gitLite",
     features: [],
-  }
+  },
 ];
 
 export const skills = [
@@ -252,16 +252,22 @@ export const socials = [
 
 export const WorkExpcontents = [
   {
-    title: "Teaching Assistant - 100xDevs (full Stack Bootcamp)",
+    title: "full Stack developer - (Nomorede)",
     description: [
-      "Supported students in their journey from beginners to full-stack developers, guiding them through a comprehensive curriculum covering MERN stack development, DevOps principles, and system design.",
-      "Engaged with students in the Discord server, providing hand-on support, offering guidance and solutions for their coding challenges",
-      "Offered personalized feedback on projects, ensuring students understood core concepts, applied best practices, and successfully completed their learning objectives.",
+      "Builting interactive dashboards using Next.js and integrating various third-party frameworks (GetStream.io, New Relic) to enhance functionality and monitoring",
+    ],
+    date: "July 2024 - Present",
+  },
+  {
+    title: "Teaching Assistant - (100xDevs (full Stack Bootcamp))",
+    description: [
+      "Supported students in their journey from beginners to full-stack developers, guiding them through a curriculum covering MERN stack development, DevOps, and little system design.",
+      "Actively engaged with students in the Discord server, providing hand-on support, personalized feedback and guidance on projects and solutions for their coding challenges.",
     ],
     date: "Dec 2023 - May 2024",
   },
   {
-    title: "Web developer Intern - ONBO",
+    title: "Web developer Intern - (ONBO)",
     description: [
       "Refactored and migrated the codebase from a traditional component-based structure to a modular MVVM architecture, enhancing maintainability and collaboration for future development.",
       "Demonstrated strong understanding of modern web technologies like Svelte, SvelteKit, TypeScript, and MVVM architecture.",
