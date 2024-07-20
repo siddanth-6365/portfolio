@@ -55,14 +55,14 @@ const ProjectCard = ({
                     <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
                 </div> */}
 
-                <Link href={url || `/`} className="border-b">
+                <div onClick={setOpen} className="cursor-pointer">
                     <Image
                         className=""
                         src={image}
                         alt={title}
                         style={{ height: '220px', width: "100%" }}
                     />
-                </Link>
+                </div>
 
                 <Dialog open={open} onOpenChange={setOpen}>
                     <DialogTrigger asChild>
@@ -72,7 +72,14 @@ const ProjectCard = ({
                     </DialogTrigger>
                     <DialogContent className="w-full max-w-3xl p-0">
                         <DialogHeader className="mt-4 ml-4 bg-black">
-                            <DialogTitle>Project Video {ytEmbeedUrl ? "" : "(Sorry demo video not avaliable, till then enjoy the song!)"}</DialogTitle>
+                            <DialogTitle>Project Video {ytEmbeedUrl ? "" : "(Sorry Currently demo video  is not avaliable)"}</DialogTitle>
+                            {ytEmbeedUrl ? (
+                                <p></p>
+                            ) : (
+                                <p className="underline font-semibold text-red-600 text-center text-2xl">
+                                    <Link href={github} > View Github URL</Link>
+                                </p>
+                            )}
                         </DialogHeader>
                         <div className="relative w-full h-0 pb-[56.25%]">
                             <iframe
