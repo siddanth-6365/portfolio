@@ -55,7 +55,7 @@ const ProjectCard = ({
                     <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
                 </div> */}
 
-                <div onClick={setOpen} className="cursor-pointer">
+                <div onClick={() => setOpen(true)} className="cursor-pointer">
                     <Image
                         className=""
                         src={image}
@@ -154,7 +154,7 @@ const ProjectCard = ({
 
 export default ProjectCard;
 
-function PlayIcon(props) {
+function PlayIcon(props : any) {
     return (
         <svg
             {...props}
@@ -174,7 +174,7 @@ function PlayIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props :any) {
     return (
         <svg
             {...props}
