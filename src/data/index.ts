@@ -8,8 +8,28 @@ import propxImg from "../../public/propx.png";
 import frescoGuardImg from "../../public/frescoGuard.png";
 import githubImg from "../../public/github.png";
 import gitImg from "../../public/git.png";
+import vercelLiteImg from "../../public/vercelLite.png";
 
 export const projectList = [
+  {
+    id: 12,
+    tag: "top",
+    title: "vercelLite",
+    category: "backend",
+    image: vercelLiteImg,
+    ytEmbeedUrl: "https://www.youtube.com/embed/hsuV1CAn7SQ",
+    description:
+      "Developed a Vercel like platform, for automated frontend website hosting by implementing a microservices architecture using Node.js, Docker, and AWS services (ECR, ECS, S3) and built an API server that manages project deployments, interacts with AWS ECS to spin up containers, and utilizes Redis for real-time logging. Created a reverse proxy server to handle the routing of user requests to the appropriate files in the S3 bucket and Incorporated real-time communication using Socket.io for live build logs.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    ],
+    url: undefined,
+    github: "https://github.com/siddanth-6365/vercelLite",
+    features: [],
+  },
   {
     id: 1,
     tag: "top",
@@ -29,6 +49,7 @@ export const projectList = [
     github: "https://github.com/siddanth-6365/Flight-Booking-Backend",
     features: [],
   },
+
   {
     id: 2,
     title: "leetcode-stats-api",
@@ -123,7 +144,6 @@ export const projectList = [
     id: 7,
     title: "Email Classifier-GPT",
     category: "full Stack",
-    tag: "top",
     image: emailClassifyImg,
     description:
       "This web application allows users to seamlessly manage their Gmail inbox by classifying emails into various categories using the power of OpenAI's GPT",

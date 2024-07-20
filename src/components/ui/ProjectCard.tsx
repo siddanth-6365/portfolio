@@ -1,8 +1,11 @@
 "use client";
+import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Tilt from "react-parallax-tilt";
 import { GoArrowUpRight } from "react-icons/go";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button"
 
 interface Props {
     id: number;
@@ -12,6 +15,7 @@ interface Props {
     tech: (string | StaticImageData)[];
     url?: string | undefined;
     github: string;
+    ytEmbeedUrl?: string;
 }
 
 const ProjectCard = ({
@@ -22,7 +26,9 @@ const ProjectCard = ({
     tech,
     url,
     github,
+    ytEmbeedUrl
 }: Props) => {
+    const [open, setOpen] = useState(false)
     return (
         <Tilt
             glareColor="#ffffff"
@@ -31,7 +37,7 @@ const ProjectCard = ({
             className="h-fit"
         >
             <div data-aos="fade-up" className=" border relative  dark:bg-black-900">
-                <div className="absolute -left-1 top-0">
+                {/* <div className="absolute -left-1 top-0">
                     <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
                     <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
                 </div>
@@ -47,25 +53,53 @@ const ProjectCard = ({
                 <div className="absolute bottom-0 right-1">
                     <span className="w-3 h-[1.2px] bg-white bg-opacity-70 absolute"></span>
                     <span className="w-3 h-[1.2px] rotate-90 bg-white  bg-opacity-70 absolute"></span>
-                </div>
+                </div> */}
 
                 <Link href={url || `/`} className="border-b">
                     <Image
                         className=""
                         src={image}
                         alt={title}
-                        style={{ height: '220px',width:"100%" }}
+                        style={{ height: '220px', width: "100%" }}
                     />
                 </Link>
+
+                <Dialog open={open} onOpenChange={setOpen}>
+                    <DialogTrigger asChild>
+                        <Button variant="ghost" className="absolute pl-[90%]">
+                            <PlayIcon className="w-6 h-6" />
+                        </Button>
+                    </DialogTrigger>
+                    <DialogContent className="w-full max-w-3xl p-0">
+                        <DialogHeader className="mt-4 ml-4 bg-black">
+                            <DialogTitle>Project Video {ytEmbeedUrl ? "" : "(Sorry demo video not avaliable, till then enjoy the song!)"}</DialogTitle>
+                        </DialogHeader>
+                        <div className="relative w-full h-0 pb-[56.25%]">
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full"
+                                src={ytEmbeedUrl ? ytEmbeedUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+
+                        </div>
+                        <DialogFooter>
+                            <Button variant="outline" onClick={() => setOpen(false)}>
+                                Close
+                            </Button>
+                        </DialogFooter>
+                    </DialogContent>
+                </Dialog>
 
                 <div className="p-4">
                     <div className="flex justify-between items-center">
                         <Link href={url || `/`}>
-                            <h3 className=" font-bold my-3 hover:text-violet-500 ">
+                            <h3 className=" font-bold my-3 hover:text-gray-500 ">
                                 {title}
                             </h3>
                         </Link>
-                        {url && (
+                        {/* {url && (
                             <a
                                 className="rounded bg-green-100  text-green-800 text-xs me-2 px-2.5 py-0.5 dark:bg-gray-700 dark:text-gray-300"
                                 href={url}
@@ -73,7 +107,7 @@ const ProjectCard = ({
                             >
                                 Live
                             </a>
-                        )}
+                        )} */}
                     </div>
 
                     <p className="line-clamp-6 opacity-80 text-gray-300  text-sm">{description}</p>
@@ -112,3 +146,43 @@ const ProjectCard = ({
 };
 
 export default ProjectCard;
+
+function PlayIcon(props) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <polygon points="6 3 20 12 6 21 6 3" />
+        </svg>
+    )
+}
+
+
+function XIcon(props) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+        </svg>
+    )
+}
