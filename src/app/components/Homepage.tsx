@@ -8,6 +8,7 @@ import { AnimatedTooltip } from "@/components/socialinks";
 import { socials } from "@/data";
 import ScrollDownButton from "@/components/ui/scroll-down-btn";
 import { useHydration } from "@/hooks/useHydration";
+import { resumeLink } from "@/data";
 
 export default function HeroPage() {
   const isHydrated = useHydration();
@@ -20,7 +21,7 @@ export default function HeroPage() {
             {isHydrated && <Hero />}
             <ShinyButton
               text="Resume"
-              link="https://docs.google.com/document/d/1iiUdY4-qzZn1aCpZ6ZOeqS0AX_cmZV7V/edit?usp=sharing&ouid=113332697539049869624&rtpof=true&sd=true"
+              link={resumeLink}
             />
             <div className="flex flex-row items-center justify-center mt-4 mr-6 md:mt-6 w-full">
               <AnimatedTooltip items={socials} />

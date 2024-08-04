@@ -310,3 +310,5 @@ export const commandsAnswers = {
     "Teaching Assistant at 100xDevs (Dec 2023 - May 2024) \n Web Developer Intern at ONBO (Aug 2023 - Dec 2023)",
   help: "Available commands: whoami, about, education, email, socials, skills, experience",
 };
+
+export const resumeLink = "https://www.canva.com/design/DAGJgD_5ee4/yngItTDh9gkAD7mREbAh3A/view?utm_content=DAGJgD_5ee4&utm_campaign=designshare&utm_medium=link&utm_source=editor";
