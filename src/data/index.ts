@@ -6,9 +6,9 @@ import cppImg from "../../public/c++.png";
 import ethereumImg from "../../public/ethereum.svg";
 import propxImg from "../../public/propx.png";
 import frescoGuardImg from "../../public/frescoGuard.png";
-import githubImg from "../../public/github.png";
 import gitImg from "../../public/git.png";
 import vercelLiteImg from "../../public/vercelLite.png";
+import pysqlImg from "../../public/pysql.png";
 
 export const projectList = [
   {
@@ -28,6 +28,23 @@ export const projectList = [
     ],
     url: undefined,
     github: "https://github.com/siddanth-6365/vercelLite",
+    features: [],
+  },
+  {
+    id: 12,
+    tag: "top",
+    title: "pySql",
+    category: "AI",
+    image: pysqlImg,
+    ytEmbeedUrl: "https://www.youtube.com/embed/aSfLUx28RIg",
+    description:
+      "Developed a SQL chatbot using Groq, integrated into Slack, enabling users to access database results through simple language queries. Automated translation of natural language queries to SQL, facilitating direct interaction with SQL databases and improving data accessibility. Enhanced decision-making for non-technical users by simplifying complex data retrieval through Slack, integrating Groq API and SQL database interactions.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg",
+    ],
+    url: "https://github.com/siddanth-6365/pySql",
+    github: "https://github.com/siddanth-6365/pySql",
     features: [],
   },
   {
@@ -122,11 +139,11 @@ export const projectList = [
     detailedDescription:
       "PropX is a cutting-edge platform dedicated to revolutionizing real estate transactions and property management using blockchain technology, specifically Ethereum. Our mission is to enhance transparency, security, and efficiency in property dealings, making it more accessible to a global audience.",
   },
+
   {
     id: 6,
     title: "FrescoGuard",
-    tag: "top",
-    category: "full Stack",
+    category: "AI",
     image: frescoGuardImg,
     description:
       "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
@@ -311,4 +328,5 @@ export const commandsAnswers = {
   help: "Available commands: whoami, about, education, email, socials, skills, experience",
 };
 
-export const resumeLink = "https://www.canva.com/design/DAGJgD_5ee4/yngItTDh9gkAD7mREbAh3A/view?utm_content=DAGJgD_5ee4&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+export const resumeLink =
+  "https://www.canva.com/design/DAGJgD_5ee4/yngItTDh9gkAD7mREbAh3A/view?utm_content=DAGJgD_5ee4&utm_campaign=designshare&utm_medium=link&utm_source=editor";

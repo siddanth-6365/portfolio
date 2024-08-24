@@ -72,23 +72,31 @@ const ProjectCard = ({
                     </DialogTrigger>
                     <DialogContent className="w-full max-w-3xl p-0">
                         <DialogHeader className="mt-4 ml-4 bg-black">
-                            <DialogTitle>Project Video {ytEmbeedUrl ? "" : "(Sorry Currently demo video  is not avaliable)"}</DialogTitle>
-                            {ytEmbeedUrl ? (
-                                <p></p>
-                            ) : (
-                                <p className="underline font-semibold text-red-600 text-center text-2xl">
-                                    <Link href={github} > View Github URL</Link>
-                                </p>
-                            )}
+                            <DialogTitle>Project Video</DialogTitle>
+
                         </DialogHeader>
                         <div className="relative w-full h-0 pb-[56.25%]">
-                            <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                src={ytEmbeedUrl ? ytEmbeedUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"}
-                                title="YouTube video"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            />
+                            {
+                                ytEmbeedUrl ? (
+                                    <iframe
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        src={ytEmbeedUrl}
+                                        title={title}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <div className="flex justify-center items-center h-full">
+                                        (Sorry Currently demo video  is not avaliable)
+                                        <p className="underline font-semibold text-red-600 text-center text-2xl">
+                                            <Link href={github} > View Github URL</Link>
+                                        </p>
+                                    </div>
+                                )
+
+                            }
+
 
                         </div>
                         <DialogFooter>
@@ -154,7 +162,7 @@ const ProjectCard = ({
 
 export default ProjectCard;
 
-function PlayIcon(props : any) {
+function PlayIcon(props: any) {
     return (
         <svg
             {...props}
@@ -174,7 +182,7 @@ function PlayIcon(props : any) {
 }
 
 
-function XIcon(props :any) {
+function XIcon(props: any) {
     return (
         <svg
             {...props}
