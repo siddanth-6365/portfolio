@@ -289,22 +289,32 @@ export const socials = [
 
 export const WorkExpcontents = [
   {
-    title: "full Stack developer - (Nomorede)",
+    title: "Backend Developer - (Maxint, Inc)",
     description: [
-      "Builting interactive dashboards using Next.js and integrating various third-party frameworks (GetStream.io, New Relic) to enhance functionality and monitoring",
+      "Developed and integrated APIs to fetch financial data, optimizing query performance by creating materialized views using PostgreSQL.",
+      "Collaborated with the team to enhance backend systems using Python and Node.js, focusing on high-performance and scalable solutions."
     ],
-    date: "July 2024 - Present",
+    date: "Sep 2024 - Present",
   },
   {
-    title: "Teaching Assistant - (100xDevs (full Stack Bootcamp))",
+    title: "Full Stack Developer - (Nomorede)",
     description: [
-      "Supported students in their journey from beginners to full-stack developers, guiding them through a curriculum covering MERN stack development, DevOps, and little system design.",
-      "Actively engaged with students in the Discord server, providing hand-on support, personalized feedback and guidance on projects and solutions for their coding challenges.",
+      "Developed interactive dashboards using Next.js with latest libraries like Shadcn, React-hook-form, Framer-motion, and TailwindCSS.",
+      "Integrated third-party services such as Google Auth and Sentry for authentication and error tracking, ensuring seamless user experience and system monitoring.",
+      "Collaborated with backend teams for API integration and deployed applications on Google Cloud Platform (GCP) for production readiness and performance optimization.",
+    ],
+    date: "July 2024 - Sep 2024",
+  },
+  {
+    title: "Teaching Assistant - (100xDevs (Full Stack Bootcamp))",
+    description: [
+      "Supported students in their journey from beginners to full-stack developers, guiding them through a curriculum covering MERN stack development, DevOps, and system design.",
+      "Actively engaged with students in the Discord server, providing hands-on support, personalized feedback, and guidance on projects and coding challenges.",
     ],
     date: "Dec 2023 - May 2024",
   },
   {
-    title: "Web developer Intern - (ONBO)",
+    title: "Web Developer Intern - (ONBO)",
     description: [
       "Refactored and migrated the codebase from a traditional component-based structure to a modular MVVM architecture, enhancing maintainability and collaboration for future development.",
       "Demonstrated strong understanding of modern web technologies like Svelte, SvelteKit, TypeScript, and MVVM architecture.",
