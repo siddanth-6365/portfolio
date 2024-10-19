@@ -195,6 +195,10 @@ export const projectList = [
 
 export const skills = [
   {
+    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    name: "Python",
+  },
+  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     name: "NextJS",
   },
