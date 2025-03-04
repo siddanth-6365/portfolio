@@ -58,7 +58,7 @@ const Hero = () => {
         Hi, I&apos;m SIDDANTH
       </p>
       <p className="md:text-3xl text-2xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
-        An full Stack developer
+        An Developer
       </p>
     
       building <Highlight>seamless</Highlight> interfaces

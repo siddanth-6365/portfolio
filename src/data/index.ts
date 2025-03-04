@@ -9,6 +9,7 @@ import frescoGuardImg from "../../public/frescoGuard.png";
 import gitImg from "../../public/git.png";
 import vercelLiteImg from "../../public/vercelLite.png";
 import pysqlImg from "../../public/pysql.png";
+import cctvproject from "../../public/cctvproject.png";
 
 export const projectList = [
   {
@@ -48,8 +49,26 @@ export const projectList = [
     features: [],
   },
   {
-    id: 1,
+    id: 13,
     tag: "top",
+    title: "Intelligent_Video_Recording_for_CCTV",
+    category: "AI",
+    image: cctvproject,
+    // ytEmbeedUrl: "https://www.youtube.com/embed/aSfLUx28RIg",
+    description:
+      "Developed an Intelligent Video Recording Optimization system for CCTV footage that reduces storage overhead by selectively recording only activity-rich segments. Utilized frame subtraction for efficient motion detection combined with YOLOv8-based object detection to trigger recording when significant events occur. This hybrid approach improved real-time responsiveness and enhanced the overall effectiveness of surveillance systems.",
+    tech: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    ],
+    url: "https://github.com/siddanth-6365/Intelligent_Video_Recording_for_CCTV",
+    github:
+      "https://github.com/siddanth-6365/Intelligent_Video_Recording_for_CCTV",
+    features: [],
+  },
+  {
+    id: 1,
+    // tag: "top",
     title: "Flight-Booking-Backend",
     category: "backend",
     image: nodejsImg,
@@ -195,7 +214,7 @@ export const projectList = [
 
 export const skills = [
   {
-    url:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     name: "Python",
   },
   {
@@ -242,10 +261,10 @@ export const skills = [
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     name: "Git",
   },
-  // {
-  //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
-  //   name: "Kubernetes",
-  // },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+    name: "Terraform",
+  },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     name: "Docker",
@@ -293,19 +312,19 @@ export const socials = [
 
 export const WorkExpcontents = [
   {
-    title: "Backend Developer - (Maxint, Inc)",
+    title: "Backend Developer Intern - (Maxint, Inc)",
     description: [
-      "Developed and integrated APIs to fetch financial data, optimizing query performance by creating materialized views using PostgreSQL.",
-      "Collaborated with the team to enhance backend systems using Python and Node.js, focusing on high-performance and scalable solutions."
+      "Implemented budgeting system by creating materialized views using user transactions and identify recurring bills.",
+      "Developed a transaction categorizer using an DeBERTa zero shot classification model, fine-tuned it with transaction dataset, and deployed it on an AWS sagemaker inference.",
+      "Developing a RAG chatbot from scratch using open sources models(llama,sqlcoder-2) for user queries related to their transactions and offers by generating SQL queries and matching embeddings",
     ],
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - Jan 2025",
   },
   {
-    title: "Full Stack Developer - (Nomorede)",
+    title: "Full Stack Developer Intern - (Nomorede)",
     description: [
-      "Developed interactive dashboards using Next.js with latest libraries like Shadcn, React-hook-form, Framer-motion, and TailwindCSS.",
-      "Integrated third-party services such as Google Auth and Sentry for authentication and error tracking, ensuring seamless user experience and system monitoring.",
-      "Collaborated with backend teams for API integration and deployed applications on Google Cloud Platform (GCP) for production readiness and performance optimization.",
+      "Designed and developed landing pages and interactive dashboards using Next.js, using libraries such as Shadcn, Framer Motion, and TailwindCSS, in collaboration with UI/UX designers. live results at nomorede.com",
+      "Collaborated with backend developers for designing and integrate APIs and contributed to the deployment of services on Google Cloud Platform (GCP) and Worked on vector-based product recommendation system for personalized user experiences.",
     ],
     date: "July 2024 - Sep 2024",
   },
@@ -318,10 +337,10 @@ export const WorkExpcontents = [
     date: "Dec 2023 - May 2024",
   },
   {
-    title: "Web Developer Intern - (ONBO)",
+    title: "Frontend Developer Intern - (ONBO)",
     description: [
-      "Refactored and migrated the codebase from a traditional component-based structure to a modular MVVM architecture, enhancing maintainability and collaboration for future development.",
-      "Demonstrated strong understanding of modern web technologies like Svelte, SvelteKit, TypeScript, and MVVM architecture.",
+      "Converted Figma designs into dynamic, component-driven front-end experiences using SvelteKit, TypeScript, and TailwindCSS, collaborating with design and product teams.",
+      "Refactored the codebase to MVVM architecture, improving maintainability and ease of future development and Built key features like auto-saving data with localStorage and a quick action button for enhanced usability.",
     ],
     date: "Aug 2023 – Dec 2023",
   },
