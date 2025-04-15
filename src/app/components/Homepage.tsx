@@ -28,7 +28,9 @@ export default function HeroPage() {
             </div>
           </div>
         </HeroHighlight>
-        <ScrollDownButton />
+        <div className="hidden md:block">
+          <ScrollDownButton />
+        </div>
       </div>
     </>
   );
@@ -52,19 +54,22 @@ const Hero = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: [20, -5, 0] }}
       transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-      className="text-xl px-4 md:text-2xl lg:text-3xl font-bold text-neutral-700 dark:text-neutral-200 max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+      className=" text-xl px-4 md:text-2xl lg:text-3xl font-bold text-neutral-700 dark:text-neutral-200 max-w-4xl leading-relaxed lg:leading-snug text-center  mx-auto "
     >
-      <p className="md:text-7xl text-3xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-2 md:py-4">
-        Hi, I&apos;m SIDDANTH
+      <p className=" md:text-7xl text-3xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-2 md:py-4">
+        Hi, I&apos;m Siddanth
       </p>
-      <p className="md:text-3xl text-2xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
-        An Developer
+      <p className=" md:text-3xl text-2xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
+      A CS Student &amp; Developer
       </p>
+      <p className=" md:text-xl text-lg font-bold relative z-20 bg-clip-text text-neutral-400 max-w-2xl  py-2">
+      Passionate about building apps; currently exploring AI/ML, building, AI agents, RAG and full stack apps.
+        </p>
     
-      building <Highlight>seamless</Highlight> interfaces
-      <br /> &nbsp; and <Highlight>robust</Highlight> backends
-      <br /> 
-      <p className="md:text-2xl text-xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
+      {/* Building <Highlight>web apps</Highlight> and
+      <br /> <Highlight>generative AI</Highlight> solutions
+      <br />  */}
+      <p className=" md:text-2xl text-xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
         Time Zone: {time} IST
       </p>
     </motion.h1>
