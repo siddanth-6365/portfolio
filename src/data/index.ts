@@ -290,7 +290,7 @@ export const socials = [
     username: "Siddanth6365",
     url: "https://x.com/Siddanth6365",
     image:
-      "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
   },
   {
     id: 2,
@@ -306,7 +306,7 @@ export const socials = [
     username: "siddanth-reddy",
     url: "https://www.linkedin.com/in/siddanth-reddy/",
     image:
-      "https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
   },
 ];
 
