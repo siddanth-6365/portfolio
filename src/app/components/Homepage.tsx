@@ -59,11 +59,11 @@ const Hero = () => {
       <p className=" md:text-7xl text-3xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-2 md:py-4">
         Hi, I&apos;m Siddanth
       </p>
-      <p className=" md:text-3xl text-2xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
+      {/* <p className=" md:text-3xl text-2xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-2">
       A CS Student &amp; Developer
-      </p>
-      <p className=" md:text-xl text-lg font-bold relative z-20 bg-clip-text text-neutral-400 max-w-2xl  py-2">
-      Passionate about building apps; currently exploring AI/ML, building, AI agents, RAG and full stack apps.
+      </p> */}
+      <p className=" md:text-2xl text-xl font-bold relative z-20 bg-clip-text text-neutral-400 max-w-2xl  py-2">
+      A developer who loves coding and building web apps
         </p>
     
       {/* Building <Highlight>web apps</Highlight> and
