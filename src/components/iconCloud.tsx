@@ -4,7 +4,7 @@ const slugs = [
   "typescript",
   "javascript",
   "react",
- "tailwindcss",
+  "tailwindcss",
   "html5",
   "css3",
   "nodedotjs",
@@ -34,7 +34,7 @@ const slugs = [
 
 export function IconCloud() {
   return (
-    <div className="relative flex h-full w-full max-w-[38rem] items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-10">
+    <div className="relative flex h-full w-full max-h-[28rem] max-w-[28rem] items-center justify-center overflow-hidden rounded-lg bg-background md:px-10 px-16 md:pb-10 pb-6">
       <IconCloud2 iconSlugs={slugs} />
     </div>
   );

@@ -63,9 +63,9 @@ const Hero = () => {
       A CS Student &amp; Developer
       </p> */}
       <p className=" md:text-2xl text-xl font-bold relative z-20 bg-clip-text text-neutral-400 max-w-2xl  py-2">
-      A developer who loves coding and building web apps
-        </p>
-    
+        A developer who loves coding and building web apps
+      </p>
+
       {/* Building <Highlight>web apps</Highlight> and
       <br /> <Highlight>generative AI</Highlight> solutions
       <br />  */}

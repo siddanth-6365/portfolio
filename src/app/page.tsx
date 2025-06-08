@@ -7,6 +7,7 @@ import GeminiEffect from "./components/GeminiEffect";
 import ContactForm from "./components/Contact";
 import Skills from "./components/SkillsPage";
 import { GithubCalender } from "./components/GithubCalender";
+import Hero from "./components/Hero";
 
 export default function HeroHighlightDemo() {
   return (
@@ -16,7 +17,7 @@ export default function HeroHighlightDemo() {
 
       {/* HomePage */}
       <div>
-        <HomePage />
+        <Hero />
       </div>
 
       {/* Skills section */}
@@ -25,7 +26,7 @@ export default function HeroHighlightDemo() {
       </div>
 
       {/* Work Experience */}
-      <div>
+      <div className="md:my-[6rem] my-[4rem]">
         <WorkExperience />
       </div>
 
@@ -35,12 +36,14 @@ export default function HeroHighlightDemo() {
       </div>
 
       {/* Projects section */}
-      <div className="px-[1.3rem] lg:px-[9rem] my-[6rem]">
+      <div className="px-[1.3rem] lg:px-[9rem] md:my-[6rem] my-[4rem]">
         <Projects />
       </div>
 
-      <GeminiEffect />
-      <ContactForm />
+      {/* <GeminiEffect /> */}
+      <div className="">
+        <ContactForm />
+      </div>
     </>
   );
 }
