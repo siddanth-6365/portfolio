@@ -10,7 +10,7 @@ const Skills = () => {
       <p className="text-center  text-xl sm:text-2xl mb-6 font-bold">
         Tools I work with{" "}
       </p>
-      <div className="flex gap-[1rem] relative  flex-wrap items-center justify-center">
+      <div className="flex gap-[1rem] max-w-screen-lg mx-auto relative  flex-wrap items-center justify-center">
         {skills.map((s) => (
           <Skill key={s.url} skill={s} />
         ))}

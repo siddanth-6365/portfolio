@@ -82,12 +82,12 @@ export default function ContactForm() {
 
                         </div>
 
-                        <div className="mt-10 p-6 bg-black dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+                        <div className="mt-10 p-6 bg-black dark:bg-black-700 rounded-xl border border-black-100 dark:border-gray-800">
                             <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-2">
-                                Available!
+                                Let&apos;s work together!
                             </h4>
                             <p className="text-gray-200 dark:text-gray-200 text-sm">
-                                I&apos;m currently available for freelance projects and new opportunities.
+                                I&apos;m available for freelance projects and new opportunities.
                                 Let&apos;s discuss your next project!
                             </p>
                         </div>

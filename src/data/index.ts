@@ -19,7 +19,7 @@ export const projectList = [
     title: "TrackIt-AI",
     category: "AI",
     image: trackItImg,
-    // ytEmbeedUrl: "",
+    ytEmbeedUrl: "https://www.youtube.com/embed/ki9gguv20kc",
     description:
       "This project turns receipt images into structured expense data, stores it in Supabase Postgres, and lets users ask natural‑language questions about their spending using Text‑to‑SQL, LLM + OCR (receipt parsing & categorization)",
     tech: [
@@ -36,7 +36,7 @@ export const projectList = [
     title: "vercelLite",
     category: "backend",
     image: vercelLiteImg,
-    ytEmbeedUrl: "https://www.youtube.com/embed/hsuV1CAn7SQ",
+    ytEmbeedUrl: "https://www.youtube.com/embed/8LnTBE9aGmk",
     description:
       "Developed a Vercel like platform, for automated frontend website hosting by implementing a microservices architecture using Node.js, Docker, and AWS services (ECR, ECS, S3) and built an API server that manages project deployments, interacts with AWS ECS to spin up containers, and utilizes Redis for real-time logging. Created a reverse proxy server to handle the routing of user requests to the appropriate files in the S3 bucket and Incorporated real-time communication using Socket.io for live build logs.",
     tech: [
@@ -218,7 +218,7 @@ export const projectList = [
     category: "backend",
     image: gitImg,
     description:
-      "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations. using javascript and nodejs",
+      "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations. using javascript and nodejs. I was exploring and understanding the inners workings of Git. By developing this project, I aimed to demystify the complex processes involved in version control systems          ",
     tech: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
@@ -331,16 +331,20 @@ export const WorkExpcontents = [
   {
     title: "Software Developer Intern",
     company: "Gridmetry",
-    description: ["Developing KPI dashboard for business insights."],
+    description: [
+      "Built responsive KPI dashboard UI and API endpoints with real-time data streaming (SSE) and React Query caching.",
+      "Designed PostgreSQL views for KPI aggregation, data normalization, timezone handling, and multi-resolution analytics.",
+      "Automated daily data retrieval and web scraping with Python scripts, reducing manual effort.",
+    ],
     date: "June 2025 - Present",
   },
   {
     title: "Backend Developer Intern",
     company: "Maxint, Inc",
     description: [
-      "Built budgeting system with materialized views and recurring bill detection.",
-      "Deployed a fine-tuned DeBERTa model for transaction categorization on AWS.",
-      "Creating a RAG chatbot for user transaction queries using open-source LLMs.",
+      "Designed and implemented a budgeting system with materialized views and recurring bill detection.",
+      "Created PostgreSQL views for transaction aggregation and bill identification.",
+      "Developed and fine-tuned zero-shot models for transaction categorization and improved chatbot query handling with open-source LLMs.",
     ],
     date: "Sep 2024 - Jan 2025",
   },
