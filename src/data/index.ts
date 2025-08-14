@@ -389,4 +389,4 @@ export const commandsAnswers = {
 };
 
 export const resumeLink =
-  "https://www.canva.com/design/DAGJgD_5ee4/yngItTDh9gkAD7mREbAh3A/view?utm_content=DAGJgD_5ee4&utm_campaign=designshare&utm_medium=link&utm_source=editor";
+  "https://drive.google.com/file/d/104m_WWXSJvEfutUHeg5hagolbn86Sc1e/view?usp=sharing";
