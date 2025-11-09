@@ -393,4 +393,4 @@ export const commandsAnswers = {
 };
 
 export const resumeLink =
-  "https://drive.google.com/file/d/104m_WWXSJvEfutUHeg5hagolbn86Sc1e/view?usp=sharing";
+  "https://drive.google.com/file/d/1Ws5Q36Sz44S1d6jW6Q-K7-tw9jKh8g8z/view?usp=drive_link";
