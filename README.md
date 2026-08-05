@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# siddanth.tech
 
-## Getting Started
-
-First, run the development server:
+Personal site. Next.js App Router, Tailwind, server-rendered — one client
+component (the contact form).
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All of it lives in [`src/data/index.ts`](src/data/index.ts) — profile, experience,
+projects, skills, background. The components only lay it out, so updating the site
+means editing that one file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The résumé is served from `public/siddanth-reddy-resume.pdf`; `/resume` redirects
+there. Replace the PDF and the link follows.
 
-## Learn More
+## Contact form
 
-To learn more about Next.js, take a look at the following resources:
+`POST /api/mail` needs three env vars, or it returns 503 and points visitors at the
+email address instead:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+GMAIL_USER=you@gmail.com
+GMAIL_PASSWORD=<gmail app password>
+TO_EMAIL=where@to.send
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Use a [Gmail app password](https://myaccount.google.com/apppasswords), never the
+account password. The route validates input, strips CR/LF, builds the subject
+server-side, throttles per IP, and drops anything that fills the honeypot field.
 
-## Deploy on Vercel
+## Theme
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Five CSS variables in [`src/app/globals.css`](src/app/globals.css) (`--bg`, `--fg`,
+`--muted`, `--border`, `--accent`), mapped to Tailwind colors in
+`tailwind.config.ts`. Dark only.

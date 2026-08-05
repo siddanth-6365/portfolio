@@ -1,6 +1,6 @@
-import { redirect } from 'next/navigation';
-import { resumeLink } from '@/data';
+import { redirect } from "next/navigation";
+import { profile } from "@/data";
 
 export default function ResumeRedirectPage() {
-    redirect(resumeLink);
+  redirect(profile.resume);
 }
