@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { profile } from "@/data";
+import Pulse from "./Pulse";
 import Socials from "./Socials";
 
 const nav = [
@@ -12,9 +13,10 @@ export default function Header() {
   return (
     <header className="rise">
       <nav className="flex items-center justify-between gap-4 pb-14">
+        {/* redundant on mobile — the name sits directly below */}
         <a
           href="#top"
-          className="font-mono text-[13px] text-fg transition-colors hover:text-accent"
+          className="hidden font-mono text-[13px] text-fg transition-colors hover:text-accent sm:block"
         >
           siddanth.tech
         </a>
@@ -41,6 +43,11 @@ export default function Header() {
         <span className="text-fg">{profile.company}</span>
         <span className="mx-2 text-border">·</span>
         {profile.location}
+      </p>
+
+      <p className="mt-5 inline-flex items-center gap-2 font-mono text-xs text-muted">
+        <Pulse />
+        Open to new opportunities
       </p>
 
       <div className="mt-7 max-w-[38rem] space-y-3 text-[15px] leading-relaxed text-fg/75">

@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function Skills() {
   return (
-    <Section id="skills" title="Skills">
+    <Section id="skills" index="03" title="Skills">
       <dl className="space-y-5">
         {skillGroups.map((group) => (
           <div

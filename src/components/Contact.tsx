@@ -5,7 +5,7 @@ import Socials from "./Socials";
 
 export default function Contact() {
   return (
-    <Section id="contact" title="Contact">
+    <Section id="contact" index="05" title="Contact">
       <p className="max-w-[34rem] text-[15px] leading-relaxed text-fg/75">
         Open to interesting backend, infrastructure and AI work. The fastest way
         to reach me is{" "}

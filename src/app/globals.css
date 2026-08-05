@@ -8,7 +8,7 @@
     --fg: #ededed;
     --muted: #8b8b8b;
     --border: #262626;
-    --accent: #7dd3fc;
+    --accent: #7ee787;
   }
 
   html {
@@ -35,6 +35,13 @@
   }
 }
 
+/* dashboard rule lines behind the hero */
+.bg-grid {
+  background-image: linear-gradient(to right, #ffffff0a 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff0a 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -50,11 +57,29 @@
   animation: rise 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
+@keyframes trace-draw {
+  from {
+    stroke-dashoffset: 1320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.trace {
+  stroke-dasharray: 1320;
+  animation: trace-draw 2.4s cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-  .rise {
-    animation: none;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

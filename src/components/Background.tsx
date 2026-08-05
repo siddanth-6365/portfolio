@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function Background() {
   return (
-    <Section id="background" title="Background">
+    <Section id="background" index="04" title="Background">
       <div className="space-y-9">
         <div>
           <div className="flex flex-wrap items-baseline justify-between gap-x-4">

@@ -1,9 +1,10 @@
 import { earlier, experience } from "@/data";
+import Pulse from "./Pulse";
 import Section from "./Section";
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Experience">
+    <Section id="experience" index="01" title="Experience">
       <div className="space-y-10">
         {experience.map((job) => (
           <div key={job.company}>
@@ -17,7 +18,9 @@ export default function Experience() {
                 <div key={role.title}>
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4">
                     <h4 className="text-[15px] text-fg">{role.title}</h4>
-                    <span className="font-mono text-xs tabular-nums text-muted">
+                    <span className="inline-flex items-center gap-2 font-mono text-xs tabular-nums text-muted">
+                      {/* ponytail: the string is the source of truth for "current" */}
+                      {role.period.includes("Present") && <Pulse />}
                       {role.period}
                     </span>
                   </div>

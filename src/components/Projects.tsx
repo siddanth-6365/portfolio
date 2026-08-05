@@ -23,7 +23,7 @@ function ExternalLink({ href, children }: { href: string; children: string }) {
 
 export default function Projects() {
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" index="02" title="Projects">
       <div className="space-y-11">
         {featured.map((p) => (
           <article key={p.slug}>
