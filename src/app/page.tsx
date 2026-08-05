@@ -1,9 +1,7 @@
 "use client"
 import Navbar from "@/components/Navbar";
-import HomePage from "./components/Homepage";
 import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
-import GeminiEffect from "./components/GeminiEffect";
 import ContactForm from "./components/Contact";
 import Skills from "./components/SkillsPage";
 import { GithubCalender } from "./components/GithubCalender";
@@ -40,7 +38,6 @@ export default function HeroHighlightDemo() {
         <Projects />
       </div>
 
-      {/* <GeminiEffect /> */}
       <div className="">
         <ContactForm />
       </div>
