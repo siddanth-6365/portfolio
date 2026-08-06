@@ -8,8 +8,8 @@ export const profile = {
   site: "https://siddanth.tech",
   resume: "/siddanth-reddy-resume.pdf",
   bio: [
-    "I'm a software developer at an energy-tech startup, building full-stack applications — frontend dashboards and the backend systems behind them.",
-    "Outside work I'm just curious about tech, and usually building something with AI.",
+    "I'm a software developer at an startup, building full-stack applications — frontend dashboards and the backend systems behind them.",
+    "Outside work I'm just curious about tech and usually building something with AI.",
   ],
 } as const;
 
@@ -64,8 +64,8 @@ export const experience: {
         title: "Software Developer Intern",
         period: "Jun — Dec 2025",
         bullets: [
-          "Developed a client dashboard monitoring 7 mining sites across 3 clients, streaming 5-second performance data over SSE and serving cached 15-minute, hourly and daily views through TanStack React Query, interactive data grids and trend charts.",
-          "Automated accounting KPI calculations for 7 sites across multiple time resolutions by ingesting API, email and telemetry data through scheduled AWS Lambda and ECS jobs, with PostgreSQL persistence, CloudWatch alarms and data-consistency checks.",
+          "Developed a client dashboard monitoring mining sites across clients, streaming performance data over SSE and serving cached 15-minute, hourly and daily views through TanStack React Query, interactive data grids and trend charts.",
+          "Automated accounting KPI calculations for sites across multiple time resolutions by ingesting API, email and telemetry data through scheduled AWS Lambda and ECS jobs, with PostgreSQL persistence, CloudWatch alarms and data-consistency checks.",
         ],
       },
     ],
@@ -108,7 +108,7 @@ export const featured: {
     bullets: [
       "Classifies messages across three modalities — text, images and voice — into notify, digest or mute, using recipient-specific behavioral history and tiered BM25 retrieval.",
       "A deterministic safety layer catches phishing, brand impersonation, credential requests and prompt-injection attempts before the language model is ever invoked.",
-      "Production-ready LLM pipeline: schema-validated outputs, citation extraction, retry and fallback handling, provider-pluggable models, and 121 offline tests in CI.",
+      "Production-ready LLM pipeline: schema-validated outputs, citation extraction, retry and fallback handling, provider-pluggable models and offline tests in CI.",
     ],
     repo: "https://github.com/siddanth-6365/attention-router",
   },
@@ -169,11 +169,11 @@ export const otherWork: {
     note: "Git's internals rebuilt from scratch in JavaScript",
     repo: "https://github.com/siddanth-6365/gitLite",
   },
-  {
-    title: "pySql",
-    note: "Slack bot that answers database questions in plain English",
-    repo: "https://github.com/siddanth-6365/pySql",
-  },
+  // {
+  //   title: "pySql",
+  //   note: "Slack bot that answers database questions in plain English",
+  //   repo: "https://github.com/siddanth-6365/pySql",
+  // },
   {
     title: "leetcode-stats-api",
     note: "LeetCode's GraphQL API, wrapped as REST",

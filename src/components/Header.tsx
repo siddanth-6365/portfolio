@@ -47,7 +47,7 @@ export default function Header() {
 
       <p className="mt-5 inline-flex items-center gap-2 font-mono text-xs text-muted">
         <Pulse />
-        Open to new opportunities
+        Open to new opportunities and freelance work
       </p>
 
       <div className="mt-7 max-w-[38rem] space-y-3 text-[15px] leading-relaxed text-fg/75">
