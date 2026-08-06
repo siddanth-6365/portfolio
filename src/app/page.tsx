@@ -1,49 +1,32 @@
-"use client"
-import Navbar from "@/components/Navbar";
-import HomePage from "./components/Homepage";
-import WorkExperience from "./components/WorkExperience";
-import Projects from "./components/Projects";
-import GeminiEffect from "./components/GeminiEffect";
-import ContactForm from "./components/Contact";
-import Skills from "./components/SkillsPage";
-import { GithubCalender } from "./components/GithubCalender";
-import Hero from "./components/Hero";
+import Backdrop from "@/components/Backdrop";
+import Background from "@/components/Background";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
-export default function HeroHighlightDemo() {
+export default function Home() {
   return (
-    <>
-      {/* Static Navbar */}
-      <Navbar />
+    <div className="relative overflow-hidden">
+      <Backdrop />
 
-      {/* HomePage */}
-      <div>
-        <Hero />
-      </div>
+      <main
+        id="top"
+        className="relative mx-auto max-w-[46rem] px-6 py-14 sm:px-8 sm:py-20"
+      >
+        <Header />
+        <div className="mt-16 space-y-14">
+          <Experience />
+          <Projects />
+          <Skills />
+          <Background />
+          <Contact />
+        </div>
+      </main>
 
-      {/* Skills section */}
-      <div className="px-[1.5rem] lg:px-[9rem] my-[2rem] mt-[2rem]">
-        <Skills />
-      </div>
-
-      {/* Work Experience */}
-      <div className="md:my-[6rem] my-[4rem]">
-        <WorkExperience />
-      </div>
-
-      {/* Github Calendar */}
-      <div className="flex flex-col items-center justify-center p-4 md:p-0 my-[2rem]">
-        <GithubCalender />
-      </div>
-
-      {/* Projects section */}
-      <div className="px-[1.3rem] lg:px-[9rem] md:my-[6rem] my-[4rem]">
-        <Projects />
-      </div>
-
-      {/* <GeminiEffect /> */}
-      <div className="">
-        <ContactForm />
-      </div>
-    </>
+      <Footer />
+    </div>
   );
 }

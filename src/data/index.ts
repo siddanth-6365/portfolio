@@ -1,396 +1,275 @@
-import emailClassifyImg from "../../public/email-classify.png";
-import portfolioImg from "../../public/portfolio.png";
-import leetcodeStatsImg from "../../public/leetcode-stats.png";
-import nodejsImg from "../../public/nodejs.png";
-import cppImg from "../../public/c++.png";
-import ethereumImg from "../../public/ethereum.svg";
-import propxImg from "../../public/propx.png";
-import frescoGuardImg from "../../public/frescoGuard.png";
-import gitImg from "../../public/git.png";
-import vercelLiteImg from "../../public/vercelLite.png";
-import pysqlImg from "../../public/pysql.png";
-import cctvproject from "../../public/cctvproject.png";
-import trackItImg from "../../public/trackit-ai-img.png";
+export const profile = {
+  name: "Siddanth Reddy Katipally",
+  short: "Siddanth Reddy",
+  role: "Software Developer",
+  company: "Gridmetry GmbH",
+  location: "India — Remote",
+  email: "siddanth6365@gmail.com",
+  site: "https://siddanth.tech",
+  resume: "/siddanth-reddy-resume.pdf",
+  bio: [
+    "I'm a software developer at an startup, building full-stack applications — frontend dashboards and the backend systems behind them.",
+    "Outside work I'm just curious about tech and usually building something with AI.",
+  ],
+} as const;
 
-export const projectList = [
-  {
-    id: 14,
-    tag: "top",
-    title: "TrackIt-AI",
-    category: "AI",
-    image: trackItImg,
-    ytEmbeedUrl: "https://www.youtube.com/embed/ki9gguv20kc",
-    description:
-      "This project turns receipt images into structured expense data, stores it in Supabase Postgres, and lets users ask natural‑language questions about their spending using Text‑to‑SQL, LLM + OCR (receipt parsing & categorization)",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/TrackIt-AI",
-    features: [],
-  },
-  {
-    id: 12,
-    tag: "top",
-    title: "vercelLite",
-    category: "backend",
-    image: vercelLiteImg,
-    ytEmbeedUrl: "https://www.youtube.com/embed/8LnTBE9aGmk",
-    description:
-      "Developed a Vercel like platform, for automated frontend website hosting by implementing a microservices architecture using Node.js, Docker, and AWS services (ECR, ECS, S3) and built an API server that manages project deployments, interacts with AWS ECS to spin up containers, and utilizes Redis for real-time logging. Created a reverse proxy server to handle the routing of user requests to the appropriate files in the S3 bucket and Incorporated real-time communication using Socket.io for live build logs.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/vercelLite",
-    features: [],
-  },
-  {
-    id: 12,
-    title: "pySql",
-    category: "AI",
-    image: pysqlImg,
-    ytEmbeedUrl: "https://www.youtube.com/embed/aSfLUx28RIg",
-    description:
-      "Developed a SQL chatbot using Groq, integrated into Slack, enabling users to access database results through simple language queries. Automated translation of natural language queries to SQL, facilitating direct interaction with SQL databases and improving data accessibility. Enhanced decision-making for non-technical users by simplifying complex data retrieval through Slack, integrating Groq API and SQL database interactions.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg",
-    ],
-    url: "https://github.com/siddanth-6365/pySql",
-    github: "https://github.com/siddanth-6365/pySql",
-    features: [],
-  },
-  {
-    id: 13,
-    tag: "top",
-    title: "CCTV Intelligent Video Recording",
-    category: "AI",
-    image: cctvproject,
-    // ytEmbeedUrl: "https://www.youtube.com/embed/aSfLUx28RIg",
-    description:
-      "Developed an Intelligent Video Recording Optimization system for CCTV footage that reduces storage overhead by selectively recording only activity-rich segments. Utilized frame subtraction for efficient motion detection combined with YOLOv8-based object detection to trigger recording when significant events occur. This hybrid approach improved real-time responsiveness and enhanced the overall effectiveness of surveillance systems.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    ],
-    url: "https://github.com/siddanth-6365/Intelligent_Video_Recording_for_CCTV",
-    github:
-      "https://github.com/siddanth-6365/Intelligent_Video_Recording_for_CCTV",
-    features: [],
-  },
-  {
-    id: 1,
-    // tag: "top",
-    title: "Flight-Booking-Backend",
-    category: "backend",
-    image: nodejsImg,
-    description:
-      "Developed complete backend microservices-based project including four services: Flights, Booking, Authentication, Notification using: ExpressJs, MySQL, REST APIs , rabbitmq and npm packages (rate limiter,proxy,cron jobs,JWT) also Solved common booking problems",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/Flight-Booking-Backend",
-    features: [],
-  },
-
-  {
-    id: 2,
-    title: "leetcode-stats-api",
-    category: "backend",
-    image: leetcodeStatsImg,
-    description:
-      "This project aims to enhance the accessibility and ease of integration for developers using LeetCode data by converting the existing LeetCode API, which is based on GraphQL, into a RESTful API. The primary goal is to provide a straightforward way for developers to retrieve valuable statistics and information about LeetCode users and their problem-solving activities.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
-    ],
-    url: "https://leetcode-restful-api.vercel.app/",
-    github: "https://github.com/siddanth-6365/leetcode-Stats-api",
-    features: [],
-  },
-  {
-    id: 3,
-    title: "Personal Portfolio",
-    category: "frontend",
-    image: portfolioImg,
-    description:
-      "portfolio website, built with Next.js along with Aceternity UI and Tailwind CSS showcases my skills, work experience and projects. The site includes a contact form, powered by Nodemailer, allowing you to easily reach out to me.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75",
-    ],
-    url: "siddanth.live",
-    github: "https://github.com/siddanth-6365/portfolio",
-    features: [
-      "Sleek and modern design",
-      "Built with Next.js for server-side rendering",
-      "Utilizes Tailwind CSS for responsive styling",
-      "Animated transitions powered by Framer Motion",
-    ],
-    detailedDescription:
-      "This project is a personal portfolio website showcasing the developer's skills and projects. It features a sleek and modern design implemented with Next.js, a React framework for server-side rendering.",
-  },
-  {
-    id: 4,
-    title: "Jaypee-Maps",
-    category: "c++",
-    image: cppImg,
-    description:
-      "created Jaypee Maps, a campus navigation system utilizing graph data structures and algorithms to optimize movement within College.The system calculates shortest paths based on user-selected locations and transportation modes",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/Jaypee-Maps",
-    features: [],
-    detailedDescription:
-      "created Jaypee Maps, a campus navigation system utilizing graph data structures and algorithms to optimize movement within College.The system calculates shortest paths based on user-selected locations and transportation modes, streamlining navigation with features like location selection and travel time estimation. This project showcased my skills in applying data structures and algorithms to solve real-world problems",
-  },
-  {
-    id: 5,
-    title: "Prop-X",
-    // tag: "top",
-    category: "blockchain",
-    image: propxImg,
-    description:
-      "PropX is a cutting-edge platform dedicated to revolutionizing real estate transactions and property management using blockchain technology, specifically Ethereum. Our mission is to enhance transparency, security, and efficiency in property dealings, making it more accessible to a global audience.",
-    tech: [
-      ethereumImg,
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/Prop-X",
-    features: [],
-    detailedDescription:
-      "PropX is a cutting-edge platform dedicated to revolutionizing real estate transactions and property management using blockchain technology, specifically Ethereum. Our mission is to enhance transparency, security, and efficiency in property dealings, making it more accessible to a global audience.",
-  },
-
-  {
-    id: 6,
-    title: "FrescoGuard",
-    category: "AI",
-    image: frescoGuardImg,
-    description:
-      "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    ],
-    url: undefined,
-    github: "https://github.com/siddanth-6365/FrescoGuard",
-    features: [],
-    detailedDescription:
-      "Fresco Guard is a groundbreaking crop management solution that seamlessly integrates a dynamic Next.js frontend with a Python backend powered by advanced machine learning models. This single repository houses the complete source code, documentation, and resources for the Fresco Guard project, developed by Team Skyshots during the InnovateNSUT'24.",
-  },
-  // {
-  //   id: 7,
-  //   title: "Email Classifier-GPT",
-  //   category: "full Stack",
-  //   image: emailClassifyImg,
-  //   description:
-  //     "This web application allows users to seamlessly manage their Gmail inbox by classifying emails into various categories using the power of OpenAI's GPT",
-  //   tech: [
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg",
-  //   ],
-  //   url: "https://email-classifications-gpt-149g.vercel.app/",
-  //   github: "https://github.com/ankitrajxd/myapp-config.git",
-  //   features: [""],
-  //   detailedDescription:
-  //     "This project implements GitOps methodology for managing infrastructure, specifically for a web application. It utilizes Argo CD for continuous delivery and integrates with Kubernetes for container orchestration.",
-  // },
-  {
-    id: 8,
-    tag: "top",
-    title: "gitLite",
-    category: "backend",
-    image: gitImg,
-    description:
-      "GitLite is a lightweight version control system inspired by Git. It was created to gain a deeper understanding of Git's internals and to offer a simplified alternative for basic version control operations. using javascript and nodejs. I was exploring and understanding the inners workings of Git. By developing this project, I aimed to demystify the complex processes involved in version control systems          ",
-    tech: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    ],
-    url: "https://github.com/siddanth-6365/gitLite",
-    github: "https://github.com/siddanth-6365/gitLite",
-    features: [],
-  },
-];
-
-export const skills = [
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    name: "Python",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    name: "NextJS",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    name: "React",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    name: "TailwindCSS",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    name: "JavaScript",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    name: "TypeScript",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-    name: "C++",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
-    name: "Svelte",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-    name: "postgresql",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-    name: "MongoDB",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
-    name: "GraphQL",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-    name: "Git",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
-    name: "Terraform",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-    name: "Docker",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    name: "AWS",
-  },
-  {
-    url: "https://pbs.twimg.com/profile_images/1584620135490338816/tCCcROZD_200x200.png",
-    name: "turborepo",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
-    name: "Redis",
-  },
-];
-
+// key -> lucide icon is mapped in Socials.tsx, so this file stays React-free
 export const socials = [
   {
-    id: 1,
-    name: "Twitter",
-    username: "Siddanth6365",
-    url: "https://x.com/Siddanth6365",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg",
+    key: "github",
+    label: "GitHub",
+    handle: "siddanth-6365",
+    href: "https://github.com/siddanth-6365",
   },
   {
-    id: 2,
-    name: "Github",
-    username: "siddanth-6365",
-    url: "https://github.com/siddanth-6365",
-    image:
-      "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+    key: "linkedin",
+    label: "LinkedIn",
+    handle: "siddanth-reddy",
+    href: "https://www.linkedin.com/in/siddanth-reddy/",
   },
   {
-    id: 3,
-    name: "LinkedIn",
-    username: "siddanth-reddy",
-    url: "https://www.linkedin.com/in/siddanth-reddy/",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+    key: "x",
+    label: "X",
+    handle: "Siddanth6365",
+    href: "https://x.com/Siddanth6365",
+  },
+  {
+    key: "mail",
+    label: "Email",
+    handle: profile.email,
+    href: `mailto:${profile.email}`,
+  },
+] as const;
+
+type Role = { title: string; period: string; bullets: string[] };
+
+export const experience: {
+  company: string;
+  location: string;
+  roles: Role[];
+}[] = [
+  {
+    company: "Gridmetry GmbH",
+    location: "Remote",
+    roles: [
+      {
+        title: "Software Developer",
+        period: "Jan 2026 — Present",
+        bullets: [
+          "Integrated a new mining site with an external energy-market provider in Go, implementing OAuth authentication, REST polling and acknowledgment flows, and control-plane routing into the production pipeline.",
+          "Built a full-stack bidding platform on a React spreadsheet-style UI and FastAPI services, supporting bid creation, editing, deletion, real-time provider submission, DST and holiday deadline enforcement, deterministic bid identifiers, and scheduled AWS Lambda processing.",
+        ],
+      },
+      {
+        title: "Software Developer Intern",
+        period: "Jun — Dec 2025",
+        bullets: [
+          "Developed a client dashboard monitoring mining sites across clients, streaming performance data over SSE and serving cached 15-minute, hourly and daily views through TanStack React Query, interactive data grids and trend charts.",
+          "Automated accounting KPI calculations for sites across multiple time resolutions by ingesting API, email and telemetry data through scheduled AWS Lambda and ECS jobs, with PostgreSQL persistence, CloudWatch alarms and data-consistency checks.",
+        ],
+      },
+    ],
   },
 ];
 
-export const WorkExpcontents = [
+export const earlier: { company: string; role: string; period: string }[] = [
   {
-    title: "Software Developer Intern",
-    company: "Gridmetry",
-    description: [
-      "Built responsive KPI dashboard UI and API endpoints with real-time data streaming (SSE) and React Query caching.",
-      "Designed PostgreSQL views for KPI aggregation, data normalization, timezone handling, and multi-resolution analytics.",
-      "Automated daily data retrieval and web scraping with Python scripts, reducing manual effort.",
-    ],
-    date: "June 2025 - Present",
-  },
-  {
-    title: "Backend Developer Intern",
     company: "Maxint, Inc",
-    description: [
-      "Designed and implemented a budgeting system with materialized views and recurring bill detection.",
-      "Created PostgreSQL views for transaction aggregation and bill identification.",
-      "Developed and fine-tuned zero-shot models for transaction categorization and improved chatbot query handling with open-source LLMs.",
-    ],
-    date: "Sep 2024 - Jan 2025",
+    role: "Backend Developer Intern",
+    period: "Sep 2024 — Jan 2025",
   },
   {
-    title: "Full Stack Developer Intern",
     company: "Nomorede",
-    description: [
-      "Developed landing pages and dashboards with Next.js and modern UI libraries.",
-      "Integrated APIs and contributed to GCP deployments and product recommendations.",
-    ],
-    date: "July 2024 - Sep 2024",
+    role: "Full Stack Developer Intern",
+    period: "Jul — Sep 2024",
   },
   {
-    title: "Teaching Assistant",
-    company: "100xDevs (Full Stack Bootcamp)",
-    description: [
-      "Guided students in MERN stack, DevOps, and system design.",
-      "Provided hands-on support and feedback in Discord community.",
-    ],
-    date: "Dec 2023 - May 2024",
-  },
-  {
-    title: "Frontend Developer Intern",
     company: "ONBO",
-    description: [
-      "Built front-end features from Figma using SvelteKit and TailwindCSS.",
-      "Refactored to MVVM and implemented auto-save and quick actions.",
-    ],
-    date: "Aug 2023 – Dec 2023",
+    role: "Frontend Developer Intern",
+    period: "Aug — Dec 2023",
   },
 ];
 
-export const commandsAnswers = {
-  whoami: "Siddanth Reddy",
-  about:
-    "Yet another developer from India with a passion for writing code and creating web applications that solve real-life challenges",
-  education: "(B.Tech.) - CSE at JIIT, Noida (2022-2026)",
-  email: "siddanth6365@gmail.com",
-  socials:
-    "LinkedIn: linkedin.com/in/siddanth-reddy\nGitHub: github.com/siddanth-6365\nWebsite: siddanth.live",
-  skills:
-    "Front-end: React.js, Next.js, SvelteKit, TailwindCSS\nBack-end: Node.js, Express.js, GraphQL, Microservices, Monorepos (Turborepo), Redis\nDatabases: MySQL, MongoDB, PostgreSQL\nDevOps & Deployments: Docker, Git/GitHub, Serverless Backends (Cloudflare Workers), AWS (EC2)",
-  experience:
-    "Teaching Assistant at 100xDevs (Dec 2023 - May 2024) \n Web Developer Intern at ONBO (Aug 2023 - Dec 2023)",
-  help: "Available commands: whoami, about, education, email, socials, skills, experience",
+export const featured: {
+  slug: string;
+  title: string;
+  tagline: string;
+  stack: string[];
+  bullets: string[];
+  repo: string;
+  live?: string;
+  video?: string;
+}[] = [
+  {
+    slug: "attention-router",
+    title: "Attention Router",
+    tagline: "Notification triage that learns what each recipient actually does.",
+    stack: ["Python", "FastAPI", "BM25", "LLMs"],
+    bullets: [
+      "Classifies messages across three modalities — text, images and voice — into notify, digest or mute, using recipient-specific behavioral history and tiered BM25 retrieval.",
+      "A deterministic safety layer catches phishing, brand impersonation, credential requests and prompt-injection attempts before the language model is ever invoked.",
+      "Production-ready LLM pipeline: schema-validated outputs, citation extraction, retry and fallback handling, provider-pluggable models and offline tests in CI.",
+    ],
+    repo: "https://github.com/siddanth-6365/attention-router",
+  },
+  {
+    slug: "vercellite",
+    title: "VercelLite",
+    tagline: "Deploy a React app from a repo URL, the way Vercel does it.",
+    stack: [
+      "Node.js",
+      "Redis Pub/Sub",
+      "Docker",
+      "AWS ECS",
+      "S3",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    bullets: [
+      "Builds React applications from GitHub repository URLs inside isolated Docker containers and publishes them on hosted URLs with custom-domain support and request analytics.",
+      "Deployment orchestration on Node.js and AWS ECS, Redis Pub/Sub for real-time build logs, PostgreSQL with Prisma for project and deployment persistence.",
+      "A reverse proxy routes incoming requests to the correct deployed assets in Amazon S3.",
+    ],
+    repo: "https://github.com/siddanth-6365/vercelLite",
+    video: "https://www.youtube.com/watch?v=8LnTBE9aGmk",
+  },
+  {
+    slug: "trackit-ai",
+    title: "TrackIt-AI",
+    tagline: "Photograph a receipt, then ask questions about your spending.",
+    stack: ["Python", "Next.js", "Supabase", "OCR", "LLMs"],
+    bullets: [
+      "Turns receipt images into structured expense data through OCR and LLM parsing, with automatic categorization.",
+      "Stores everything in Supabase Postgres and answers natural-language questions about spending via Text-to-SQL.",
+    ],
+    repo: "https://github.com/siddanth-6365/TrackIt-AI",
+    video: "https://www.youtube.com/watch?v=ki9gguv20kc",
+  },
+  {
+    slug: "cctv-ivr",
+    title: "CCTV Intelligent Video Recording",
+    tagline: "Record only the footage worth keeping.",
+    stack: ["Python", "YOLOv8", "OpenCV"],
+    bullets: [
+      "Cuts CCTV storage overhead by recording only activity-rich segments instead of continuous footage.",
+      "Frame subtraction handles cheap motion detection; YOLOv8 object detection confirms significant events before recording starts.",
+    ],
+    repo: "https://github.com/siddanth-6365/Intelligent_Video_Recording_for_CCTV",
+  },
+];
+
+export const otherWork: {
+  title: string;
+  note: string;
+  repo: string;
+  live?: string;
+}[] = [
+  {
+    title: "gitLite",
+    note: "Git's internals rebuilt from scratch in JavaScript",
+    repo: "https://github.com/siddanth-6365/gitLite",
+  },
+  // {
+  //   title: "pySql",
+  //   note: "Slack bot that answers database questions in plain English",
+  //   repo: "https://github.com/siddanth-6365/pySql",
+  // },
+  {
+    title: "leetcode-stats-api",
+    note: "LeetCode's GraphQL API, wrapped as REST",
+    repo: "https://github.com/siddanth-6365/leetcode-Stats-api",
+    live: "https://leetcode-rest-api.onrender.com",
+  },
+  {
+    title: "Jaypee Maps",
+    note: "Campus navigation on graph algorithms, in C++",
+    repo: "https://github.com/siddanth-6365/Jaypee-Maps",
+  },
+  {
+    title: "Prop-X",
+    note: "Real-estate transactions on Ethereum",
+    repo: "https://github.com/siddanth-6365/Prop-X",
+  },
+  {
+    title: "FrescoGuard",
+    note: "Crop management with ML-backed predictions",
+    repo: "https://github.com/siddanth-6365/FrescoGuard",
+  },
+];
+
+export const skillGroups: { label: string; items: string[] }[] = [
+  {
+    label: "Languages",
+    items: ["Python", "Go", "C/C++", "TypeScript", "JavaScript", "SQL"],
+  },
+  {
+    label: "Backend & AI",
+    items: [
+      "FastAPI",
+      "Node.js",
+      "REST APIs",
+      "RAG",
+      "AI Agents",
+      "Prompt Engineering",
+      "Multimodal AI",
+      "LLMs",
+    ],
+  },
+  {
+    label: "Frontend",
+    items: ["React", "Next.js", "Tailwind CSS", "TanStack React Query"],
+  },
+  {
+    label: "Databases & Infrastructure",
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Docker",
+      "Linux",
+      "AWS ECS",
+      "ECR",
+      "S3",
+      "Lambda",
+      "CloudWatch",
+      "Terraform",
+      "GitHub Actions",
+      "CI/CD",
+      "pytest",
+    ],
+  },
+];
+
+export const education = {
+  degree: "B.Tech, Computer Science & Engineering",
+  school: "Jaypee Institute of Information Technology, Noida",
+  period: "2022 — 2026",
 };
 
-export const resumeLink =
-  "https://drive.google.com/file/d/1Ws5Q36Sz44S1d6jW6Q-K7-tw9jKh8g8z/view?usp=drive_link";
+export const achievements: { title: string; note: string; period: string }[] = [
+  {
+    title: "Code with Cisco 2025 Finalist",
+    note: "Selected among the top 75 of 30,000+ applicants and named one of three project nominees in the code-a-thon.",
+    period: "2025",
+  },
+];
+
+export const community: {
+  role: string;
+  org: string;
+  period: string;
+  note: string;
+}[] = [
+  {
+    role: "Teaching Assistant",
+    org: "100xDevs Full-Stack Web Development Cohort",
+    period: "Jan — Sep 2024",
+    note: "Resolved technical questions and created learning resources across full-stack topics.",
+  },
+  {
+    role: "Core Team Member",
+    org: "Google Developer Student Club, JIIT Noida",
+    period: "Aug 2023 — Jul 2024",
+    note: "Organized technical events and delivered frontend development workshops.",
+  },
+];
