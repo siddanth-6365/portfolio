@@ -21,7 +21,7 @@ const description = `${profile.role} at ${profile.company}. Backend systems, dat
 export const metadata: Metadata = {
   metadataBase: new URL(profile.site),
   title: {
-    default: `${profile.short} — ${profile.role}`,
+    default: profile.short,
     template: `%s — ${profile.short}`,
   },
   description,

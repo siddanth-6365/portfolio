@@ -8,8 +8,8 @@ export const profile = {
   site: "https://siddanth.tech",
   resume: "/siddanth-reddy-resume.pdf",
   bio: [
-    "I build backend systems and data pipelines — energy-market integrations in Go, FastAPI services, and scheduled AWS jobs that move real numbers around at Gridmetry.",
-    "Outside work I'm usually taking LLMs apart: retrieval, routing, and the deterministic scaffolding that keeps them honest.",
+    "I'm a software developer at an energy-tech startup, building full-stack applications — frontend dashboards and the backend systems behind them.",
+    "Outside work I'm just curious about tech, and usually building something with AI.",
   ],
 } as const;
 
