@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { profile } from "@/data";
 import "./globals.css";
 
-const sans = Inter({
+const sans = IBM_Plex_Sans({
   subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
   variable: "--font-sans",
 });
