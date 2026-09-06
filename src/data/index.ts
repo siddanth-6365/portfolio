@@ -5,7 +5,7 @@ export const profile = {
   company: "Gridmetry GmbH",
   location: "India — Remote",
   email: "siddanth6365@gmail.com",
-  site: "https://siddanth.tech",
+  site: "https://siddanth.dev",
   resume: "/siddanth-reddy-resume.pdf",
   bio: [
     "I'm a software developer at an startup, building full-stack applications — frontend dashboards and the backend systems behind them.",

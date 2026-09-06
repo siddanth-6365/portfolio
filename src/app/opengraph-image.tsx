@@ -22,7 +22,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 26, color: "#8b8b8b" }}>
-          siddanth.tech
+          siddanth.dev
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>

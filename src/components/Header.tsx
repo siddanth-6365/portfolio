@@ -18,7 +18,7 @@ export default function Header() {
           href="#top"
           className="hidden font-mono text-[13px] text-fg transition-colors hover:text-accent sm:block"
         >
-          siddanth.tech
+          siddanth.dev
         </a>
         <ul className="flex items-center gap-4 sm:gap-5">
           {nav.map((item) => (
